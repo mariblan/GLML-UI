@@ -2,6 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: #f8485e;
+    --secondary: #007398;
+    --tertiary: #595c5d;
+    --quaternary: #ebebeb;
+    --quinary: #01997e;
+    --senary: #292928;
+
+    --success: #2ecc71;
+    --warning: #f1c40f;
+    --failure: #e74c3c;
+  }
+
+  html {
+    font-family: Roboto, sans-serif;
+  }
+
+  /* theme-colors are for illustration purposes only - team has to decide which colors to use */
+  .theme1 {
+    --primary: #41b3a3;
+    --secondary: #85dcbe;
+    --tertiary: #e27d60;
+    --quaternary: #c38d93;
+    --quinary: #ffffff;
+    --senary: #292929;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+
+  .theme2 {
+    --primary: #b23850;
+    --secondary: #3b8beb;
+    --tertiary: #e7e3d4;
+    --quaternary: #c4dbf6;
+    --quinary: #8590aa;
+    --senary: #292929;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+  .theme3 {
+    --primary: #59253aff;
+    --secondary: #78244c;
+    --tertiary: #895061;
+    --quaternary: #0677a1;
+    --quinary: #2d4159;
+    --senary: #a6466c;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+
+  /* dark theme can be added additionally to the parent element with class="dark:dark" */
+  .dark {
+    --primary: #121212;
+    --secondary: #bbb6fc;
+    --tertiary: #370083;
+    --quaternary: #03dac5;
+    --quinary: #ffffff;
+    --senary: #000000;
+
+    --success: #6d586b;
+    --warning: #fbf426ff;
+    --failure: #88957dff;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
