@@ -2,6 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --primary: #A30262;
+    --secondary: #B55690;
+    --tertiary: #292928;
+    --quaternary: #ebebeb;
+    --quinary: #D162A4;
+    --senary: #FFFFFF;
+
+    --success: #FF9A56;
+    --warning: #EF7627;
+    --failure: #D52D00;
+  }
+
+  html {
+    font-family: Roboto, sans-serif;
+  }
+
+  /* theme-colors are for illustration purposes only - team has to decide which colors to use */
+  .theme4 {
+    --primary: #A30262;
+    --secondary: #B55690;
+    --tertiary: #595c5d;
+    --quaternary: #ebebeb;
+    --quinary: #D162A4;
+    --senary: #FFFFFF;
+
+    --success: #FF9A56;
+    --warning: #EF7627;
+    --failure: #D52D00;
+  }
+  
+  .theme1 {
+    --primary: #41b3a3;
+    --secondary: #85dcbe;
+    --tertiary: #e27d60;
+    --quaternary: #c38d93;
+    --quinary: #ffffff;
+    --senary: #292929;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+
+  .theme2 {
+    --primary: #b23850;
+    --secondary: #3b8beb;
+    --tertiary: #e7e3d4;
+    --quaternary: #c4dbf6;
+    --quinary: #8590aa;
+    --senary: #292929;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+  .theme3 {
+    --primary: #59253aff;
+    --secondary: #78244c;
+    --tertiary: #895061;
+    --quaternary: #0677a1;
+    --quinary: #2d4159;
+    --senary: #a6466c;
+
+    --success: #6d586b;
+    --warning: #fbf426;
+    --failure: #88957d;
+  }
+
+  /* dark theme can be added additionally to the parent element with class="dark:dark" */
+  .dark {
+    --primary: #121212;
+    --secondary: #bbb6fc;
+    --tertiary: #370083;
+    --quaternary: #03dac5;
+    --quinary: #ffffff;
+    --senary: #000000;
+
+    --success: #6d586b;
+    --warning: #fbf426ff;
+    --failure: #88957dff;
+  }
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -17,56 +102,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}

@@ -3,7 +3,7 @@ import { Navbar, Footer } from "src/components";
 
 function Layout() {
   return (
-    <div>
+    <div className="w-screen min-h-screen flex flex-col bg-skin-senary text-skin-tertiary">
         <Navbar />
         <div>
             <Outlet />
